@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-1-particles.iml" filepath="$PROJECT_DIR$/.idea/modules/root-1-particles.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-1-particles.root-1-particles-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-1-particles.root-1-particles-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ParticleSimulation.iml" filepath="$PROJECT_DIR$/.idea/modules/ParticleSimulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ParticleSimulation.ParticleSimulation-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ParticleSimulation.ParticleSimulation-build.iml" />
     </modules>
   </component>
 </project>
