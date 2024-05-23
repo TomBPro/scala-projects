@@ -1,10 +1,12 @@
 package particlesimulation
 
-import scalafx.scene.Scene
-import scalafx.scene.Group
-import scalafx.animation.AnimationTimer
+import scalafx.animation.{KeyFrame, Timeline}
 import scalafx.application.JFXApp3
 import scalafx.application.JFXApp3.PrimaryStage
+import scalafx.beans.property.ObjectProperty
+import scalafx.scene.paint.Color
+import scalafx.scene.{Group, Scene}
+import scalafx.util.Duration
 
 import scala.util.Random
 
@@ -12,46 +14,54 @@ object ParticleSimulation extends JFXApp3 {
 
   override def start(): Unit = {
 
-    val width = 800
-    val height = 600
-    val particleCount = 180
+    val windowWidth = 800
+    val windowHeight = 600
+    val particleCount = 1
     val particleRadius = 5
 
-    val particlesGroup = new Group()
-    val particles = Array.fill(particleCount)(
-      new Particle(
-        // These are random positions within window bounds
-        Random.nextDouble() * (width - 2 * particleRadius) + particleRadius,
-        Random.nextDouble() * (height - 2 * particleRadius) + particleRadius,
-        Direction.randomDirection()
+    val particles: Array[Particle] =
+      Array.fill(particleCount)(
+        Particle(
+          // These are random positions within window bounds
+          //centerX = Random.nextDouble() * (windowWidth - 2 * particleRadius) + particleRadius,
+          //centerY = Random.nextDouble() * (windowHeight - 2 * particleRadius) + particleRadius,
+          centerX = 599,
+    centerY = 0,
+          color = Color.rgb(Random.nextInt(256), Random.nextInt(256), Random.nextInt(256)),
+          direction = SouthEast
+        )
       )
-    )
+    val state: ObjectProperty[Array[Particle]] = ObjectProperty(particles)
 
-
-    particles.foreach(p => particlesGroup.children += p)
+    //particles.foreach(p => particlesGroup.children.add(p.toCircle))
 
     stage = new PrimaryStage {
-      title.value = "Particle Simulation"
-      scene = new Scene(this.width.value, this.height.value) {
-        content = particlesGroup
-
-        val timer: AnimationTimer = AnimationTimer { _ =>
-          particles.foreach(p => moveParticle(p, width.value, height.value))
-          particles.foreach(p => repelParticles(p, particles))
+      title = "Particle Simulation"
+      width = windowWidth
+      height = windowHeight
+      scene = new Scene {
+        content = state.value.map(_.toCircle)
+        state.onChange {
+          content = state.value.map(_.toCircle)
         }
-
-        timer.start()
       }
     }
+    val timeline = new Timeline {
+      cycleCount = Timeline.Indefinite
+      autoReverse = true
+      keyFrames = Seq(
+        KeyFrame(Duration(5), onFinished = _ => state.update(state.value.map(_.move(windowWidth, windowHeight))))
+      )
+    }
+
+    timeline.play()
+
   }
 
-  private def moveParticle(particle: Particle, width: Double, height: Double): Unit = {
-    particle.move(width, height)
-  }
-
-  private def repelParticles(particle: Particle, particles: Array[Particle]): Unit = {
-    for (other <- particles if other != particle && particle.intersects(other.getBoundsInLocal)) {
-      particle.changeDirection()
+  private def repelParticles(particle: Particle, particles: Array[Particle]): Particle = {
+    particles.find(other => other != particle && particle.toCircle.intersects(other.toCircle.getBoundsInLocal)) match {
+      case Some(_) => particle.changeDirection()
+      case None => particle
     }
   }
 }

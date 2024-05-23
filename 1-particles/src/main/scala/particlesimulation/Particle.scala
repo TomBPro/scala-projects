@@ -1,46 +1,48 @@
 package particlesimulation
+
 import scalafx.scene.paint.Color
 import scalafx.scene.shape.Circle
 
 import scala.util.Random
 
-class Particle(initialCenterX: Double, initialCenterY: Double, var direction: Direction)
-  extends Circle {
+case class Particle(centerX: Double, centerY: Double, color: Color, direction: Direction) {
+  val radius = 5.0
 
-  radius = 5.0
-
-  centerX = initialCenterX
-  centerY = initialCenterY
-  fill = Color.rgb(Random.nextInt(256), Random.nextInt(256), Random.nextInt(256))
-
-  def move(width: Double, height: Double): Unit = {
-    direction match {
-      case North => centerY.value -= 1
-      case South => centerY.value += 1
-      case West  => centerX.value -= 1
-      case East  => centerX.value += 1
-      case NorthWest =>
-        centerX.value -= 1
-        centerY.value -= 1
-      case NorthEast =>
-        centerX.value += 1
-        centerY.value -= 1
-      case SouthWest =>
-        centerX.value -= 1
-        centerY.value += 1
-      case SouthEast =>
-        centerX.value += 1
-        centerY.value += 1
+  def move(width: Double, height: Double): Particle = {
+    val (newCenterX: Double, newCenterY: Double) = direction match {
+      case North if centerY < 0           => (centerX, height - 1)
+      case North                               => (centerX, centerY - 1)
+      case South if centerY >= height    => (centerX, 0)
+      case South                               => (centerX, centerY + 1)
+      case West if centerX < 0            => (width - 1, centerY)
+      case West                                => (centerX - 1, centerY)
+      case East if centerX >= width      => (0, centerY)
+      case East                                => (centerX + 1, centerY)
+      case NorthWest if centerX < 0 && centerY < 0 => (width - 1, height - 1)
+      case NorthWest if centerX < 0       => (width - 1, centerY - 1)
+      case NorthWest if centerY < 0       => (centerX - 1, height - 1)
+      case NorthWest                           => (centerX - 1, centerY - 1)
+      case NorthEast if centerX > width && centerY < 0 => (0, height - 1)
+      case NorthEast if centerX > width  => (0, height - 1)
+      case NorthEast if centerY < 0       => (centerX + 1, height - 1)
+      case NorthEast                           => (centerX + 1, centerY - 1)
+      case SouthWest if centerX < 0 && centerY >= height => (width - 1, 0)
+      case SouthWest if centerX < 0       => (width - 1, centerY + 1)
+      case SouthWest if centerY >= height => (width - 1, 0)
+      case SouthWest                           => (centerX - 1, centerY + 1)
+      case SouthEast if centerX >= width && centerY >= height => (0, 0)
+      case SouthEast if centerX >= width  => (0, centerY + 1)
+      case SouthEast if centerY >= height => (centerX + 1, 0)
+      case SouthEast                           => (centerX + 1, centerY + 1)
     }
 
-    // Wrap around the window
-    if (centerX.value < 0) centerX.value = width - 1
-    if (centerX.value >= width) centerX.value = 0
-    if (centerY.value < 0) centerY.value = height - 1
-    if (centerY.value >= height) centerY.value = 0
+    println(s"New particle position: ($newCenterX, $newCenterY)")
+    copy(centerX = newCenterX, centerY = newCenterY)
   }
 
-  def changeDirection(): Unit = {
-    direction = Direction.randomDirection()
-  }
+
+
+  def changeDirection(): Particle = copy(direction = Direction.randomDirection())
+
+  val toCircle: Circle = Circle(centerX, centerY, radius, color)
 }

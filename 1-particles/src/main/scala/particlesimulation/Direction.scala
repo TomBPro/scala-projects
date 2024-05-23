@@ -1,4 +1,3 @@
-// Direction.scala
 package particlesimulation
 
 import scala.util.Random
