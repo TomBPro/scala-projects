@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Wator Simulation.iml" filepath="$PROJECT_DIR$/.idea/modules/Wator Simulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Wator Simulation.Wator Simulation-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Wator Simulation.Wator Simulation-build.iml" />
+    </modules>
+  </component>
+</project>
