@@ -33,3 +33,93 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1fa59ad
 2024.05.24 09:34:30 INFO  Shut down connection with build server.
 2024.05.24 09:34:30 INFO  Shut down connection with build server.
 2024.05.24 09:34:30 INFO  Exiting server
+2024.05.24 09:44:16 INFO  Started: Metals version 1.3.1 in folders 'C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7b7cc36b]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3d98dd4f]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7b7cc36b]
+2024.05.24 09:44:16 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.24 09:44:17 INFO  Attempting to connect to the build server...
+2024.05.24 09:44:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.24 09:44:17 INFO  Attempting to connect to the build server...
+2024.05.24 09:44:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\project\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.24 09:44:17 INFO  time: Connected to build server in 0.51s
+2024.05.24 09:44:17 INFO  Connected to Build server: Bloop v1.5.17
+mai 24, 2024 9:44:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+mai 24, 2024 9:44:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+mai 24, 2024 9:44:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+mai 24, 2024 9:44:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+2024.05.24 09:44:45 INFO  time: indexed workspace in 27s
+2024.05.24 09:50:59 INFO  compiling root-2-wator (4 scala sources)
+2024.05.24 09:51:00 INFO  time: compiled root-2-wator in 1.35s
+2024.05.24 09:51:02 INFO  compiling root-2-wator (4 scala sources)
+2024.05.24 09:51:02 INFO  time: compiled root-2-wator in 0.16s
+2024.05.24 10:09:44 INFO  compiling root-2-wator (4 scala sources)
+2024.05.24 10:09:44 INFO  time: compiled root-2-wator in 0.66s
+2024.05.24 10:09:50 INFO  Shutting down server
+2024.05.24 10:09:50 INFO  shutting down Metals
+2024.05.24 10:09:50 INFO  Shut down connection with build server.
+2024.05.24 10:09:50 INFO  Shut down connection with build server.
+2024.05.24 10:09:50 INFO  Exiting server
+2024.05.24 11:28:06 INFO  Started: Metals version 1.3.1 in folders 'C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@4ea32fc2]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@7e45252d]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@4ea32fc2]
+2024.05.24 11:28:06 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.24 11:28:08 INFO  Attempting to connect to the build server...
+2024.05.24 11:28:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.24 11:28:08 INFO  Attempting to connect to the build server...
+2024.05.24 11:28:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\project\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.24 11:28:08 INFO  time: Connected to build server in 0.39s
+2024.05.24 11:28:08 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.24 11:28:08 INFO  time: Imported build in 0.1s
+mai 24, 2024 11:28:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2024.05.24 11:28:11 INFO  running 'C:\Users\tbali\scoop\apps\openjdk17\current\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\tbali\AppData\Local\Temp\metals11257989040595467853\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+mai 24, 2024 11:28:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+mai 24, 2024 11:28:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+2024.05.24 11:28:13 INFO  [info] welcome to sbt 1.9.9 (Oracle Corporation Java 17.0.2)
+2024.05.24 11:28:13 INFO  [info] loading settings for project root-2-wator-build-build from metals.sbt ...
+2024.05.24 11:28:15 INFO  [info] loading project definition from C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\project\project
+2024.05.24 11:28:15 INFO  [info] loading settings for project root-2-wator-build from metals.sbt ...
+2024.05.24 11:28:16 INFO  [info] loading project definition from C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\project
+2024.05.24 11:28:19 INFO  [success] Generated .bloop\root-2-wator-build.json
+2024.05.24 11:28:19 INFO  [success] Total time: 3 s, completed 24 mai 2024, 11:28:19
+2024.05.24 11:28:21 INFO  [info] loading settings for project root-2-wator from build.sbt ...
+2024.05.24 11:28:21 INFO  [info] set current project to Wator Simulation (in build file:/C:/Users/tbali/Documents/ECOLE/Scala/projects/2-wator/)
+2024.05.24 11:28:21 INFO  [success] Generated .bloop\root-2-wator-test.json
+2024.05.24 11:28:21 INFO  [success] Generated .bloop\root-2-wator.json
+2024.05.24 11:28:21 INFO  [success] Total time: 0 s, completed 24 mai 2024, 11:28:22
+2024.05.24 11:28:22 INFO  time: ran 'sbt bloopInstall' in 11s
+2024.05.24 11:28:22 INFO  Disconnecting from Bloop session...
+2024.05.24 11:28:22 INFO  Shut down connection with build server.
+2024.05.24 11:28:22 INFO  Shut down connection with build server.
+2024.05.24 11:28:22 INFO  Attempting to connect to the build server...
+2024.05.24 11:28:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.24 11:28:22 INFO  Attempting to connect to the build server...
+2024.05.24 11:28:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\2-wator\project\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.24 11:28:22 INFO  time: Connected to build server in 98ms
+2024.05.24 11:28:22 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.24 11:29:01 INFO  time: indexed workspace in 52s
+2024.05.24 11:29:01 INFO  compiling root-2-wator (5 scala sources)
+2024.05.24 11:29:01 INFO  time: compiled root-2-wator in 0.93s
+2024.05.24 11:29:04 INFO  time: indexed workspace in 41s
+2024.05.24 11:29:04 INFO  compiling root-2-wator (5 scala sources)
+2024.05.24 11:29:04 INFO  time: compiled root-2-wator in 0.35s
+2024.05.24 11:40:39 INFO  Can not organize imports if file has error
+2024.05.24 11:40:39 INFO  compiling root-2-wator (5 scala sources)
+2024.05.24 11:40:41 INFO  time: compiled root-2-wator in 2.59s
+2024.05.24 11:43:02 INFO  Shutting down server
+2024.05.24 11:43:02 INFO  shutting down Metals
+2024.05.24 11:43:02 INFO  Shut down connection with build server.
+2024.05.24 11:43:02 INFO  Shut down connection with build server.
+2024.05.24 11:43:02 INFO  Exiting server
