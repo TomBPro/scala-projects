@@ -3,9 +3,9 @@ package particlesimulation
 import scalafx.animation.{KeyFrame, Timeline}
 import scalafx.application.JFXApp3
 import scalafx.application.JFXApp3.PrimaryStage
-import scalafx.beans.property.ObjectProperty
+import scalafx.beans.property.{DoubleProperty, ObjectProperty}
 import scalafx.scene.paint.Color
-import scalafx.scene.{Group, Scene}
+import scalafx.scene.Scene
 import scalafx.util.Duration
 
 import scala.util.Random
@@ -14,31 +14,30 @@ object ParticleSimulation extends JFXApp3 {
 
   override def start(): Unit = {
 
-    val windowWidth = 800
-    val windowHeight = 600
-    val particleCount = 1
-    val particleRadius = 5
+    val initialWidth = 800
+    val initialHeight = 600
+    val particleCount = 170
+    val particleRadius = 5.0
 
     val particles: Array[Particle] =
       Array.fill(particleCount)(
         Particle(
           // These are random positions within window bounds
-          //centerX = Random.nextDouble() * (windowWidth - 2 * particleRadius) + particleRadius,
-          //centerY = Random.nextDouble() * (windowHeight - 2 * particleRadius) + particleRadius,
-          centerX = 599,
-    centerY = 0,
+          centerX = Random.nextDouble() * (initialWidth - 2 * particleRadius) + particleRadius,
+          centerY = Random.nextDouble() * (initialHeight - 2 * particleRadius) + particleRadius,
           color = Color.rgb(Random.nextInt(256), Random.nextInt(256), Random.nextInt(256)),
-          direction = SouthEast
+          direction = Direction.randomDirection()
         )
       )
     val state: ObjectProperty[Array[Particle]] = ObjectProperty(particles)
 
-    //particles.foreach(p => particlesGroup.children.add(p.toCircle))
+    val windowWidth: DoubleProperty = new DoubleProperty(this, "windowWidth", initialWidth)
+    val windowHeight: DoubleProperty = new DoubleProperty(this, "windowHeight", initialHeight)
 
     stage = new PrimaryStage {
       title = "Particle Simulation"
-      width = windowWidth
-      height = windowHeight
+      width = initialWidth
+      height = initialHeight
       scene = new Scene {
         content = state.value.map(_.toCircle)
         state.onChange {
@@ -46,16 +45,24 @@ object ParticleSimulation extends JFXApp3 {
         }
       }
     }
+
+    // Allows dynamic window size change
+    windowWidth.bind(stage.scene().widthProperty())
+    windowHeight.bind(stage.scene().heightProperty())
+
     val timeline = new Timeline {
       cycleCount = Timeline.Indefinite
-      autoReverse = true
+      autoReverse = false
       keyFrames = Seq(
-        KeyFrame(Duration(5), onFinished = _ => state.update(state.value.map(_.move(windowWidth, windowHeight))))
+        KeyFrame(Duration(5), onFinished = _ => {
+          val updatedParticles = state.value.map(p => p.move(windowWidth.value, windowHeight.value))
+          val repelledParticles = updatedParticles.map(p => repelParticles(p, updatedParticles))
+          state.update(repelledParticles)
+        })
       )
     }
 
     timeline.play()
-
   }
 
   private def repelParticles(particle: Particle, particles: Array[Particle]): Particle = {
