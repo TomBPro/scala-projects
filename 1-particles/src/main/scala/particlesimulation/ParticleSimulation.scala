@@ -16,8 +16,8 @@ object ParticleSimulation extends JFXApp3 {
 
     val initialWidth = 800
     val initialHeight = 600
-    val final particleCount = 170
-    val final particleRadius = 5.0
+    val particleCount = 170
+    val particleRadius = 5.0
 
     val particles: Array[Particle] =
       Array.fill(particleCount)(
