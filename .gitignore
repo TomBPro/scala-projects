@@ -1,0 +1,42 @@
+# Ignore all global target directories, if any present outside of the projects
+target/
+
+# Ignore global IDE settings
+.idea/
+.metals/
+.vscode/
+
+# Ignore build tool directories, if present globally
+.bloop/
+.bsp/
+
+# Ignore SBT and Ivy caches, if present globally
+.sbt/
+.ivy2/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Ignore binary files
+*.class
+*.jar
+*.war
+
+# Ignore backup and temporary files
+*.bak
+*.old
+*.orig
+
+# Exclude any hidden backup or temporary files globally
+.*.swp
+.*~
+
+# Ensure README.md is included
+!README.md
