@@ -1,0 +1,604 @@
+2024.05.23 14:17:35 INFO  Started: Metals version 1.3.1 in folders 'C:\Users\tbali\Documents\ECOLE\Scala\projects' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@2bcbdb16]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6830ebce]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@2bcbdb16]
+2024.05.23 14:17:35 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.23 14:17:37 INFO  no build target found for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\app\particlesApp.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:17:38 INFO  no build target found for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\app\particlesApp.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:17:38 INFO  running 'C:\Users\tbali\scoop\apps\openjdk17\current\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\tbali\AppData\Local\Temp\metals3085671551243954146\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.05.23 14:17:40 INFO  no build target found for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\app\particlesApp.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:17:42 INFO  no build target found for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\app\particlesApp.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:17:43 INFO  [info] welcome to sbt 1.9.7 (Oracle Corporation Java 17.0.2)
+2024.05.23 14:17:45 INFO  [info] loading settings for project root-1-particles-build-build from metals.sbt ...
+2024.05.23 14:17:45 INFO  [info] loading project definition from C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\project\project
+2024.05.23 14:17:47 INFO  [info] loading settings for project root-1-particles-build from metals.sbt ...
+2024.05.23 14:17:47 INFO  [info] loading project definition from C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\project
+2024.05.23 14:17:52 INFO  [success] Generated .bloop\root-1-particles-build.json
+2024.05.23 14:17:52 INFO  [success] Total time: 4 s, completed 23 mai 2024, 14:17:52
+2024.05.23 14:17:52 INFO  [info] loading settings for project root-1-particles from build.sbt ...
+2024.05.23 14:17:53 INFO  [info] set current project to root-1-particles (in build file:/C:/Users/tbali/Documents/ECOLE/Scala/projects/1-particles/)
+2024.05.23 14:17:53 INFO  [success] Generated .bloop\root-1-particles.json
+2024.05.23 14:17:53 INFO  [success] Generated .bloop\root-1-particles-test.json
+2024.05.23 14:17:53 INFO  [success] Total time: 0 s, completed 23 mai 2024, 14:17:53
+2024.05.23 14:17:53 INFO  time: ran 'sbt bloopInstall' in 15s
+2024.05.23 14:17:53 INFO  Attempting to connect to the build server...
+2024.05.23 14:17:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.23 14:17:58 INFO  time: Connected to build server in 5.25s
+2024.05.23 14:17:58 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.23 14:17:59 INFO  time: Imported build in 0.12s
+2024.05.23 14:18:03 INFO  time: indexed workspace in 4.37s
+2024.05.23 14:18:04 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:18:06 INFO  time: compiled root-1-particles in 2s
+2024.05.23 14:18:06 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:18:06 INFO  time: compiled root-1-particles in 0.55s
+2024.05.23 14:18:20 WARN  Using indexes to guess the definition of height
+2024.05.23 14:18:25 WARN  Using indexes to guess the definition of height
+2024.05.23 14:18:25 WARN  Using indexes to guess the definition of width
+2024.05.23 14:18:39 INFO  Can not organize imports if file has error
+2024.05.23 14:18:39 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:18:39 INFO  time: compiled root-1-particles in 0.39s
+2024.05.23 14:18:45 INFO  Can not organize imports if file has error
+2024.05.23 14:18:45 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:18:45 INFO  time: compiled root-1-particles in 0.3s
+2024.05.23 14:18:45 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.23 14:18:46 INFO  no build target found for /scalafx/scene/Scene.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:18:53 INFO  Can not organize imports if file has error
+2024.05.23 14:18:53 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:18:53 INFO  no build target found for /scalafx/scene/paint/Color.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:18:53 INFO  time: compiled root-1-particles in 0.42s
+2024.05.23 14:18:53 INFO  no build target found for /scalafx/animation/AnimationTimer.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:19:11 INFO  Can not organize imports if file has error
+2024.05.23 14:19:11 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:19:11 INFO  time: compiled root-1-particles in 0.25s
+2024.05.23 14:19:14 INFO  Can not organize imports if file has error
+2024.05.23 14:19:14 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:19:14 INFO  time: compiled root-1-particles in 0.19s
+2024.05.23 14:19:18 INFO  no build target found for /scalafx/beans/property/ReadOnlyDoubleProperty.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:19:21 INFO  Can not organize imports if file has error
+2024.05.23 14:19:21 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:19:22 INFO  time: compiled root-1-particles in 1.17s
+mai 23, 2024 2:20:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 382
+mai 23, 2024 2:20:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 383
+mai 23, 2024 2:20:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 384
+2024.05.23 14:20:39 INFO  Can not organize imports if file has error
+2024.05.23 14:20:39 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:20:39 WARN  Using indexes to guess the definition of height
+2024.05.23 14:20:39 INFO  time: compiled root-1-particles in 0.83s
+2024.05.23 14:20:50 INFO  no build target found for /scalafx/stage/Window.scala. Using presentation compiler with project's scala-library version: 3.3.3
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.11/scala-reflect-2.13.11.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.11/scala-reflect-2.13.11.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.11/scala-library-2.13.11.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.11/scala-library-2.13.11.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.12.0/metaconfig-typesafe-config_2.13-0.12.0.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.jar
+2024.05.23 14:21:02 INFO  Can not organize imports if file has error
+2024.05.23 14:21:02 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:21:02 INFO  time: compiled root-1-particles in 0.2s
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.jar
+mai 23, 2024 2:21:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 516
+2024.05.23 14:21:21 INFO  Can not organize imports if file has error
+2024.05.23 14:21:21 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:21:21 INFO  time: compiled root-1-particles in 0.15s
+2024.05.23 14:21:32 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:21:32 INFO  time: compiled root-1-particles in 0.13s
+2024.05.23 14:21:34 INFO  Can not organize imports if file has error
+2024.05.23 14:21:34 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:21:34 INFO  time: compiled root-1-particles in 0.15s
+2024.05.23 14:21:37 INFO  Can not organize imports if file has error
+2024.05.23 14:21:37 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:21:37 INFO  time: compiled root-1-particles in 0.14s
+2024.05.23 14:21:50 INFO  Can not organize imports if file has error
+2024.05.23 14:21:50 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:21:50 INFO  time: compiled root-1-particles in 0.17s
+2024.05.23 14:22:05 INFO  Can not organize imports if file has error
+2024.05.23 14:22:05 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:05 INFO  time: compiled root-1-particles in 0.12s
+mai 23, 2024 2:22:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 683
+2024.05.23 14:22:12 INFO  Can not organize imports if file has error
+2024.05.23 14:22:12 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:12 INFO  time: compiled root-1-particles in 0.11s
+2024.05.23 14:22:24 INFO  Can not organize imports if file has error
+2024.05.23 14:22:24 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:24 INFO  time: compiled root-1-particles in 0.72s
+2024.05.23 14:22:40 INFO  Can not organize imports if file has error
+2024.05.23 14:22:40 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:40 INFO  time: compiled root-1-particles in 0.81s
+2024.05.23 14:22:47 INFO  Can not organize imports if file has error
+2024.05.23 14:22:47 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:47 INFO  time: compiled root-1-particles in 0.63s
+2024.05.23 14:22:50 INFO  Can not organize imports if file has error
+2024.05.23 14:22:50 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:50 INFO  time: compiled root-1-particles in 0.66s
+2024.05.23 14:22:55 INFO  Can not organize imports if file has error
+2024.05.23 14:22:55 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:55 INFO  time: compiled root-1-particles in 0.68s
+2024.05.23 14:22:58 INFO  Can not organize imports if file has error
+2024.05.23 14:22:58 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:22:58 INFO  time: compiled root-1-particles in 0.74s
+2024.05.23 14:23:16 INFO  Can not organize imports if file has error
+2024.05.23 14:23:16 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:23:16 INFO  time: compiled root-1-particles in 0.15s
+2024.05.23 14:23:22 INFO  Can not organize imports if file has error
+2024.05.23 14:23:22 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:23:22 INFO  time: compiled root-1-particles in 0.63s
+2024.05.23 14:23:24 INFO  Can not organize imports if file has error
+2024.05.23 14:23:24 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:23:24 INFO  time: compiled root-1-particles in 0.64s
+2024.05.23 14:23:49 INFO  Can not organize imports if file has error
+2024.05.23 14:23:49 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:23:49 INFO  time: compiled root-1-particles in 0.15s
+2024.05.23 14:24:01 INFO  Shutting down server
+2024.05.23 14:24:01 INFO  shutting down Metals
+2024.05.23 14:24:01 INFO  Shut down connection with build server.
+2024.05.23 14:24:01 INFO  Exiting server
+2024.05.23 14:25:14 INFO  Started: Metals version 1.3.1 in folders 'C:\Users\tbali\Documents\ECOLE\Scala\projects' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@77fac2b2]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@69e45ac2]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@77fac2b2]
+2024.05.23 14:25:14 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.23 14:25:15 INFO  Attempting to connect to the build server...
+2024.05.23 14:25:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.23 14:25:15 INFO  time: Connected to build server in 0.69s
+2024.05.23 14:25:15 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.23 14:25:16 INFO  time: Imported build in 0.11s
+mai 23, 2024 2:25:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+mai 23, 2024 2:25:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+mai 23, 2024 2:25:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+2024.05.23 14:25:28 INFO  time: indexed workspace in 11s
+2024.05.23 14:25:28 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:25:28 INFO  time: compiled root-1-particles in 0.6s
+2024.05.23 14:25:28 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:25:29 INFO  time: compiled root-1-particles in 0.43s
+2024.05.23 14:25:50 INFO  Can not organize imports if file has error
+2024.05.23 14:25:50 INFO  compiling root-1-particles (2 scala sources)
+2024.05.23 14:25:51 INFO  time: compiled root-1-particles in 1.39s
+2024.05.23 14:34:03 INFO  compiling root-1-particles (1 scala source)
+2024.05.23 14:34:03 WARN  Invalid text document uri received from build server: file:///C:/Users/tbali/Documents/ECOLE/Scala/projects/1-particles/src/main/scala/app/Particle.scala
+2024.05.23 14:34:03 INFO  time: compiled root-1-particles in 0.3s
+Exception in thread "metals-watch-callback-thread" java.nio.file.NoSuchFileException: C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particleSimulation.tmp\Direction.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onChange$1(MetalsLspService.scala:1410)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onChange$1$adapted(MetalsLspService.scala:1409)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.MetalsLspService.onChange(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.MetalsLspService.didChangeWatchedFiles(MetalsLspService.scala:1390)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$fileWatcher$3(MetalsLspService.scala:278)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$fileWatcher$3$adapted(MetalsLspService.scala:277)
+	at scala.meta.internal.metals.watcher.FileWatcher$$anon$1.loop(FileWatcher.scala:198)
+	at scala.meta.internal.metals.watcher.FileWatcher$$anon$1.run(FileWatcher.scala:202)
+2024.05.23 14:54:08 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:54:08 WARN  Invalid text document uri received from build server: file:///C:/Users/tbali/Documents/ECOLE/Scala/projects/1-particles/src/main/scala/app/particlesApp.scala
+2024.05.23 14:54:08 INFO  time: compiled root-1-particles in 0.35s
+2024.05.23 14:54:24 INFO  Can not organize imports if file has error
+2024.05.23 14:54:24 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:54:24 INFO  time: compiled root-1-particles in 0.22s
+2024.05.23 14:55:25 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:55:25 INFO  time: compiled root-1-particles in 0.2s
+2024.05.23 14:55:28 INFO  Can not organize imports if file has error
+2024.05.23 14:55:36 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:55:36 INFO  time: compiled root-1-particles in 0.22s
+2024.05.23 14:55:38 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.23 14:55:38 INFO  no build target found for /scalafx/stage/Window.scala. Using presentation compiler with project's scala-library version: 3.3.3
+mai 23, 2024 2:55:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 245
+2024.05.23 14:55:38 INFO  Can not organize imports if file has error
+2024.05.23 14:55:39 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:55:39 INFO  time: compiled root-1-particles in 0.29s
+2024.05.23 14:55:45 INFO  Can not organize imports if file has error
+2024.05.23 14:55:45 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:55:45 INFO  time: compiled root-1-particles in 0.26s
+2024.05.23 14:57:48 INFO  no build target found for /scala/Array.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 14:57:49 WARN  Using indexes to guess the definition of SouthEast
+2024.05.23 14:57:50 ERROR Failed to tokenize input for semantic tokens for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: empty quoted identifier
+```scala
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:492)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:344)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.05.23 14:57:54 ERROR Failed to tokenize input for semantic tokens for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: empty quoted identifier
+```scala
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:492)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:344)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.05.23 14:57:55 ERROR Failed to tokenize input for semantic tokens for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: empty quoted identifier
+```scala
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:492)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:344)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.05.23 14:57:55 INFO  Can not organize imports if file has error
+mai 23, 2024 2:57:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\tbali\Documents\ECOLE\Scala\projects\.metals\.reports\metals-full\2024-05-23\r_compiler-error_(root-1-particles)_14-57-55-343.md
+2024.05.23 14:57:55 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:57:55 ERROR TextDocument.uri not found: 1-particles/src/main/scala/particlesimulation/Direction.scala
+scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: TextDocument.uri not found: 1-particles/src/main/scala/particlesimulation/Direction.scala
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:126)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+mai 23, 2024 2:57:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: TextDocument.uri not found: 1-particles/src/main/scala/particlesimulation/Direction.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: TextDocument.uri not found: 1-particles/src/main/scala/particlesimulation/Direction.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: TextDocument.uri not found: 1-particles/src/main/scala/particlesimulation/Direction.scala
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$runScalafixRules$2(ScalafixProvider.scala:126)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+2024.05.23 14:57:55 INFO  time: compiled root-1-particles in 0.1s
+2024.05.23 14:57:55 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:57:55 INFO  time: compiled root-1-particles in 72ms
+2024.05.23 14:57:55 ERROR Failed to tokenize input for semantic tokens for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: empty quoted identifier
+```scala
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:492)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:344)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.05.23 14:57:55 ERROR Failed to tokenize input for semantic tokens for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: empty quoted identifier
+```scala
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:492)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:344)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.05.23 14:57:56 ERROR Failed to tokenize input for semantic tokens for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: empty quoted identifier
+```scala
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:492)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:344)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.05.23 14:57:57 INFO  Can not organize imports if file has error
+2024.05.23 14:57:57 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:57:57 INFO  time: compiled root-1-particles in 80ms
+2024.05.23 14:57:57 ERROR Failed to tokenize input for semantic tokens for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: empty quoted identifier
+```scala
+^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:492)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:344)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.05.23 14:58:01 INFO  Can not organize imports if file has error
+2024.05.23 14:58:02 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:58:02 INFO  time: compiled root-1-particles in 0.26s
+2024.05.23 14:58:04 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:58:04 INFO  time: compiled root-1-particles in 0.21s
+mai 23, 2024 2:58:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 449
+2024.05.23 14:58:13 INFO  Can not organize imports if file has error
+2024.05.23 14:58:13 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:58:13 INFO  time: compiled root-1-particles in 0.24s
+2024.05.23 14:58:19 INFO  Can not organize imports if file has error
+2024.05.23 14:58:19 INFO  compiling root-1-particles (4 scala sources)
+2024.05.23 14:58:19 INFO  time: compiled root-1-particles in 0.23s
+2024.05.23 14:58:40 INFO  Can not organize imports if file has error
+2024.05.23 14:58:40 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 14:58:40 WARN  Invalid text document uri received from build server: file:///C:/Users/tbali/Documents/ECOLE/Scala/projects/1-particles/src/main/scala/particlesimulation/Repel.scala
+2024.05.23 14:58:40 INFO  time: compiled root-1-particles in 0.25s
+2024.05.23 14:58:49 INFO  Can not organize imports if file has error
+2024.05.23 14:58:49 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 14:58:49 INFO  time: compiled root-1-particles in 0.19s
+2024.05.23 14:59:47 INFO  Can not organize imports if file has error
+2024.05.23 14:59:47 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 14:59:47 INFO  time: compiled root-1-particles in 0.17s
+2024.05.23 14:59:56 INFO  Can not organize imports if file has error
+2024.05.23 14:59:56 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 14:59:56 INFO  time: compiled root-1-particles in 0.16s
+2024.05.23 15:00:02 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:00:02 INFO  time: compiled root-1-particles in 0.15s
+2024.05.23 15:00:12 INFO  Can not organize imports if file has error
+2024.05.23 15:00:12 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:00:12 INFO  time: compiled root-1-particles in 0.16s
+2024.05.23 15:00:26 INFO  Can not organize imports if file has error
+2024.05.23 15:00:26 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:00:26 INFO  time: compiled root-1-particles in 0.19s
+mai 23, 2024 3:00:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 791
+2024.05.23 15:00:30 INFO  Can not organize imports if file has error
+2024.05.23 15:00:31 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:00:31 INFO  time: compiled root-1-particles in 0.16s
+2024.05.23 15:00:54 INFO  Can not organize imports if file has error
+2024.05.23 15:00:55 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:00:55 INFO  time: compiled root-1-particles in 0.13s
+mai 23, 2024 3:01:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 951
+2024.05.23 15:01:08 INFO  Can not organize imports if file has error
+2024.05.23 15:01:08 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:01:08 INFO  time: compiled root-1-particles in 0.14s
+2024.05.23 15:01:17 INFO  Can not organize imports if file has error
+2024.05.23 15:01:17 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:01:17 INFO  time: compiled root-1-particles in 0.16s
+2024.05.23 15:01:18 WARN  Using indexes to guess the definition of Particle
+2024.05.23 15:01:23 WARN  Using indexes to guess the definition of PrimaryStage
+2024.05.23 15:01:23 INFO  Can not organize imports if file has error
+2024.05.23 15:01:23 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:01:23 INFO  time: compiled root-1-particles in 0.16s
+2024.05.23 15:01:24 WARN  Using indexes to guess the definition of PrimaryStage
+2024.05.23 15:01:41 INFO  Can not organize imports if file has error
+2024.05.23 15:01:42 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:01:42 INFO  time: compiled root-1-particles in 0.13s
+2024.05.23 15:02:23 INFO  Can not organize imports if file has error
+2024.05.23 15:02:23 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:02:23 INFO  time: compiled root-1-particles in 0.14s
+2024.05.23 15:02:33 INFO  Can not organize imports if file has error
+2024.05.23 15:02:33 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:02:33 INFO  time: compiled root-1-particles in 0.14s
+2024.05.23 15:02:40 INFO  Can not organize imports if file has error
+2024.05.23 15:02:40 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:02:40 INFO  time: compiled root-1-particles in 0.14s
+2024.05.23 15:02:48 INFO  Can not organize imports if file has error
+2024.05.23 15:02:48 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:02:48 INFO  time: compiled root-1-particles in 0.14s
+2024.05.23 15:02:50 WARN  Using indexes to guess the definition of Particle
+2024.05.23 15:02:51 INFO  Can not organize imports if file has error
+2024.05.23 15:02:51 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:02:51 INFO  time: compiled root-1-particles in 0.13s
+2024.05.23 15:03:23 INFO  Can not organize imports if file has error
+2024.05.23 15:03:23 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:03:23 INFO  time: compiled root-1-particles in 0.13s
+2024.05.23 15:04:05 INFO  running 'C:\Users\tbali\scoop\apps\openjdk17\current\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\tbali\AppData\Local\Temp\metals8692347076095209092\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.05.23 15:04:07 INFO  [info] welcome to sbt 1.9.7 (Oracle Corporation Java 17.0.2)
+2024.05.23 15:04:07 INFO  [info] loading settings for project root-1-particles-build-build from metals.sbt ...
+2024.05.23 15:04:08 INFO  [info] loading project definition from C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\project\project
+2024.05.23 15:04:08 INFO  [info] loading settings for project root-1-particles-build from metals.sbt ...
+2024.05.23 15:04:09 INFO  [info] loading project definition from C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\project
+2024.05.23 15:04:11 INFO  [success] Generated .bloop\root-1-particles-build.json
+2024.05.23 15:04:11 INFO  [success] Total time: 2 s, completed 23 mai 2024, 15:04:11
+2024.05.23 15:04:13 INFO  [info] loading settings for project root-1-particles from build.sbt ...
+2024.05.23 15:04:13 INFO  [info] set current project to ParticleSimulation (in build file:/C:/Users/tbali/Documents/ECOLE/Scala/projects/1-particles/)
+2024.05.23 15:04:13 INFO  [success] Generated .bloop\root-1-particles-test.json
+2024.05.23 15:04:13 INFO  [success] Generated .bloop\root-1-particles.json
+2024.05.23 15:04:13 INFO  [success] Total time: 1 s, completed 23 mai 2024, 15:04:13
+2024.05.23 15:04:14 INFO  time: ran 'sbt bloopInstall' in 8.86s
+2024.05.23 15:04:14 INFO  Disconnecting from Bloop session...
+2024.05.23 15:04:14 INFO  Shut down connection with build server.
+2024.05.23 15:04:14 INFO  Attempting to connect to the build server...
+2024.05.23 15:04:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.23 15:04:14 INFO  time: Connected to build server in 41ms
+2024.05.23 15:04:14 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.23 15:04:22 INFO  time: indexed workspace in 8.55s
+2024.05.23 15:04:24 INFO  Shutting down server
+2024.05.23 15:04:24 INFO  shutting down Metals
+2024.05.23 15:04:24 INFO  Shut down connection with build server.
+2024.05.23 15:04:24 INFO  Exiting server
+2024.05.23 15:36:51 INFO  Started: Metals version 1.3.1 in folders 'C:\Users\tbali\Documents\ECOLE\Scala\projects' for client Visual Studio Code 1.89.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@719a5f9a]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@e716963]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@719a5f9a]
+2024.05.23 15:36:51 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.23 15:36:52 INFO  no build target found for C:\Users\tbali\Documents\ECOLE\Scala\projects\1-particles\src\main\scala\particlesimulation\Direction.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.23 15:36:52 INFO  Attempting to connect to the build server...
+2024.05.23 15:36:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\tbali\Documents\ECOLE\Scala\projects\.metals\bsp.trace.json or C:\Users\tbali\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.23 15:36:52 INFO  time: Connected to build server in 0.32s
+2024.05.23 15:36:52 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.23 15:37:03 INFO  time: indexed workspace in 9.63s
+2024.05.23 15:37:03 INFO  compiling root-1-particles (3 scala sources)
+2024.05.23 15:37:05 INFO  time: compiled root-1-particles in 1.55s
+mai 23, 2024 3:37:09 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.05.23 15:37:16 INFO  Shutting down server
+2024.05.23 15:37:16 INFO  shutting down Metals
+2024.05.23 15:37:16 INFO  Shut down connection with build server.
+2024.05.23 15:37:16 INFO  Exiting server
