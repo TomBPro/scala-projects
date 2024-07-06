@@ -2,7 +2,6 @@ package wator
 
 import scalafx.scene.paint.Color
 import scalafx.scene.shape.Rectangle
-
 import scala.util.Random
 
 sealed trait CellType
@@ -15,13 +14,19 @@ trait PositionDelegate {
 }
 
 object Grid {
-  def createGrid(width: Int, height: Int, entities: Seq[Entity]): Array[Array[CellType]] = {
-    val grid = Array.fill[CellType](width, height)(Empty)
+  def createEmptyGrid(width: Int, height: Int): Array[Array[CellType]] = {
+    Array.fill[CellType](width, height)(Empty)
+  }
+
+  def updateGrid(grid: Array[Array[CellType]], entities: Seq[Entity]): Unit = {
+    // First, clear the grid
+    for (x <- grid.indices; y <- grid(x).indices)
+      grid(x)(y) = Empty
+    // Then populate the grid with entities
     entities.foreach {
       case entity: Entity =>
         grid(entity.x)(entity.y) = Occupied(entity)
     }
-    grid
   }
 
   def getNeighbors(x: Int, y: Int, width: Int, height: Int): Seq[(Int, Int)] = {
@@ -31,13 +36,6 @@ object Grid {
     )
     possibleNeighbors.filter { case (nx, ny) =>
       nx >= 0 && nx < width && ny >= 0 && ny < height
-    }
-  }
-
-  def updateGrid(grid: Array[Array[CellType]], entities: Seq[Entity]): Unit = {
-    entities.foreach {
-      case entity: Entity =>
-        grid(entity.x)(entity.y) = Occupied(entity)
     }
   }
 
@@ -67,8 +65,8 @@ object Grid {
         case _ => throw new IllegalStateException("This should never happen.")
       }
       new Rectangle {
-        x = currentX * cellSize
-        y = currentY * cellSize
+        this.x = currentX * cellSize
+        this.y = currentY * cellSize
         width = cellSize
         height = cellSize
         fill = entity match {
@@ -79,5 +77,5 @@ object Grid {
     }
   }
 
-  def cellIsEmpty(x: Int, y: Int)(implicit grid: Array[Array[CellType]]): Boolean = grid(x)(y) == Empty
+  def cellIsEmpty(x: Int, y: Int, grid: Array[Array[CellType]]): Boolean = grid(x)(y) == Empty
 }
