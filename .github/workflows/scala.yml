@@ -31,17 +31,11 @@ jobs:
         distribution: 'temurin'
         cache: 'sbt'
 
+    - name: Navigate to project folder
+      run: cd ${{ matrix.project }}
+
     - name: Run tests
       run: sbt test
 
     - name: Upload dependency graph
       uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
-
-    # Add conditional steps based on the project path
-    - name: Build and test project
-      if: ${{ matrix.project == '1-particles' }}
-      run: sbt test  # Replace with actual build/test command for 1-particles project
-
-    - name: Build and test project
-      if: ${{ matrix.project == '2-wator' }}
-      run: sbt test  # Replace with actual build/test command for 2-wator project
