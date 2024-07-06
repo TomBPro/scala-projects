@@ -2,7 +2,7 @@ package wator
 
 import scala.util.Random
 
-case class Tuna(x: Int, y: Int)
+case class Tuna(x: Int, y: Int, breedCycle: Int = 0) extends Entity
 
 object Tuna {
   private val random = new Random()
@@ -12,35 +12,28 @@ object Tuna {
     (0 until nTunas).map(_ => Tuna(random.nextInt(gridWidth), random.nextInt(gridHeight)))
 
   def moveTunas(tunas: Seq[Tuna], gridWidth: Int, gridHeight: Int): Seq[Tuna] = {
-    def getNeighbors(x: Int, y: Int): Seq[(Int, Int)] = {
-      val neighbors = List(
-        (x, y - 1), (x, y + 1), (x - 1, y), (x + 1, y),
-        (x - 1, y - 1), (x + 1, y - 1), (x - 1, y + 1), (x + 1, y + 1)
-      )
-      neighbors.filter {
-        case (nx, ny) => nx >= 0 && nx < gridWidth && ny >= 0 && ny < gridHeight
-      }
+    val newTunas = tunas.flatMap(moveTuna(_, gridWidth, gridHeight))
+    breedTunas(newTunas, gridWidth, gridHeight)
+  }
+
+  private def moveTuna(tuna: Tuna, gridWidth: Int, gridHeight: Int): Option[Tuna] = {
+    val neighbors = Grid.getNeighbors(tuna.x, tuna.y, gridWidth, gridHeight)
+
+    val freeNeighbors = neighbors.filterNot {
+      case (nx, ny) => nx == tuna.x && ny == tuna.y
     }
 
-    def moveTuna(tuna: Tuna, grid: Array[Array[Boolean]]): Option[Tuna] = {
-      val neighbors = getNeighbors(tuna.x, tuna.y)
-      val freeNeighbors = neighbors.filter { case (nx, ny) => !grid(nx)(ny) }
-      if (freeNeighbors.nonEmpty) {
-        val (nx, ny) = freeNeighbors(random.nextInt(freeNeighbors.length))
-        Some(Tuna(nx, ny))
-      } else {
-        Some(tuna)
-      }
+    if (freeNeighbors.nonEmpty) {
+      val (nx, ny) = freeNeighbors(random.nextInt(freeNeighbors.length))
+      Some(Tuna(nx, ny, tuna.breedCycle + 1))
+    } else {
+      Some(tuna.copy(breedCycle = tuna.breedCycle + 1))
     }
+  }
 
-    val grid = Array.fill(gridWidth, gridHeight)(false)
-    tunas.flatMap { tuna =>
-      moveTuna(tuna, grid) match {
-        case Some(newTuna) =>
-          grid(newTuna.x)(newTuna.y) = true
-          Some(newTuna)
-        case None => None
-      }
+  private def breedTunas(tunas: Seq[Tuna], gridWidth: Int, gridHeight: Int): Seq[Tuna] = {
+    tunas ++ tunas.filter(_.breedCycle >= tBreed).map { tuna =>
+      tuna.copy(breedCycle = 0)
     }
   }
 }
