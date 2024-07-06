@@ -1,18 +1,15 @@
 package wator
 
+import scala.util.Random
+
 case class Tuna(x: Int, y: Int)
 
 object Tuna {
-  import scala.util.Random
-
   private val random = new Random()
   private val tBreed = 3
 
-  def createTunas(nTunas: Int, gridWidth: Int, gridHeight: Int): Seq[Tuna] = {
-    (0 until nTunas).map { _ =>
-      Tuna(random.nextInt(gridWidth), random.nextInt(gridHeight))
-    }
-  }
+  def createTunas(nTunas: Int, gridWidth: Int, gridHeight: Int): Seq[Tuna] =
+    (0 until nTunas).map(_ => Tuna(random.nextInt(gridWidth), random.nextInt(gridHeight)))
 
   def moveTunas(tunas: Seq[Tuna], gridWidth: Int, gridHeight: Int): Seq[Tuna] = {
     def getNeighbors(x: Int, y: Int): Seq[(Int, Int)] = {
@@ -20,7 +17,6 @@ object Tuna {
         (x, y - 1), (x, y + 1), (x - 1, y), (x + 1, y),
         (x - 1, y - 1), (x + 1, y - 1), (x - 1, y + 1), (x + 1, y + 1)
       )
-      // Make sure it stays in the grid
       neighbors.filter {
         case (nx, ny) => nx >= 0 && nx < gridWidth && ny >= 0 && ny < gridHeight
       }
@@ -37,9 +33,9 @@ object Tuna {
       }
     }
 
-    val grid = Array.ofDim[Boolean](gridWidth, gridHeight)
+    val grid = Array.fill(gridWidth, gridHeight)(false)
     tunas.flatMap { tuna =>
-      moveTuna(tuna: Tuna, grid) match {
+      moveTuna(tuna, grid) match {
         case Some(newTuna) =>
           grid(newTuna.x)(newTuna.y) = true
           Some(newTuna)

@@ -1,7 +1,17 @@
 package wator
 
 import scalafx.scene.paint.Color
-import scalafx.scene.shape.{Line, Rectangle}
+import scalafx.scene.shape.Line
+import scalafx.scene.shape.Rectangle
+
+sealed trait CellType {
+  def x: Int
+  def y: Int
+}
+
+case class Empty(x: Int, y: Int) extends CellType
+case class Tuna(x: Int, y: Int) extends CellType
+case class Shark(x: Int, y: Int, energy: Int, breedCycle: Int) extends CellType
 
 object Grid {
   def createGridLines(gridWidth: Int, gridHeight: Int, cellSize: Double): Seq[Line] = {
