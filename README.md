@@ -23,10 +23,10 @@ Run the code at ParticleSimulation located [here](1-particles/src/main/scala/par
 
 Run the code at WatorSimulation located [here](2-wator/src/main/scala/wator/WatorSimulation.scala)
 
-![Demo of project 2](imgs/2-wator%20demo.png)
+![Demo of project 2](imgs/2-wator%20demo.png)!
 
-### Project 3 - <COMPLETE HERE>
+### Project 3 - Predator
 
-Run the code at WatorSimulation located [here](3-<COMPLETE HERE>/src/main/scala/wator/XSimulation.scala)
+Run the code at WatorSimulation located [here](3-predator/src/main/scala/predator/PredatorGame.scala)
 
 ![Demo of project 3](imgs/3-X%20demo.png)
