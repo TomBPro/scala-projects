@@ -34,10 +34,6 @@ object WatorSimulation extends JFXApp {
     }
   }
 
-  def printGameState(sharks: Seq[Shark], tunas: Seq[Tuna]): Unit = {
-    println(s"Sharks: ${sharks.size}, Tunas: ${tunas.size}")
-  }
-
   def checkVictoryConditions(sharks: Seq[Shark], tunas: Seq[Tuna]): Option[String] = {
     if (sharks.isEmpty && tunas.isEmpty) {
       Some("Both species extinct. It's a draw.")
@@ -76,8 +72,6 @@ object WatorSimulation extends JFXApp {
 
         // Update grid with existing entities
         grid = Grid.updateGrid(grid, sharks ++ tunas)
-
-        printGameState(sharks, tunas)
 
         // Check for victory conditions
         checkVictoryConditions(sharks, tunas) match {
