@@ -25,8 +25,8 @@ Run the code at WatorSimulation located [here](2-wator/src/main/scala/wator/Wato
 
 ![Demo of project 2](imgs/2-wator%20demo.png)!
 
-### Project 3 - Predator
+### Project 3 - Battleship
 
-Run the code at WatorSimulation located [here](3-predator/src/main/scala/predator/PredatorGame.scala)
+Run the code at GameModel located [here](3-battleship/src/main/scala/battleship/GameModel.scala)
 
 ![Demo of project 3](imgs/3-X%20demo.png)
