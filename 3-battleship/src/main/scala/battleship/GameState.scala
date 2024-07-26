@@ -5,4 +5,3 @@ case class GameState(
   opponentBoard: Board,
   playerTurn: Boolean = true
 )
-

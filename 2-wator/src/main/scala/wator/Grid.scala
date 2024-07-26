@@ -1,69 +1,63 @@
+// Grid.scala
 package wator
 
-import scalafx.collections.ObservableBuffer
-import scalafx.scene.paint.Color
-import scalafx.scene.shape.Rectangle
-
-sealed trait CellType
-case object Empty extends CellType
-case class Occupied(entity: Entity) extends CellType
+import scala.util.Random
 
 object Grid {
-  type Coordinates = (Int, Int)
-  
-  def createEmptyGrid(width: Int, height: Int): Array[Array[CellType]] = {
-    Array.fill[CellType](width, height)(Empty)
+
+  type Cell = Option[Entity]
+  type GridType = Array[Array[Cell]]
+
+  def createEmptyGrid(width: Int, height: Int): GridType = {
+    Array.fill(width, height)(None)
   }
 
-  def copyGrid(grid: Array[Array[CellType]]): Array[Array[CellType]] = {
-    grid.map(_.clone())
+  def initializeEntities(nTunas: Int, nSharks: Int, width: Int, height: Int): Seq[Entity] = {
+    val random = new Random()
+    val tunas = Seq.fill(nTunas)(Tuna(random.nextInt(width), random.nextInt(height), random.nextInt(5)))
+    val sharks = Seq.fill(nSharks)(Shark(random.nextInt(width), random.nextInt(height), random.nextInt(5), random.nextInt(5), random.nextInt(100)))
+    tunas ++ sharks
   }
 
-  def updateGrid(grid: Array[Array[CellType]], entities: Seq[Entity]): Array[Array[CellType]] = {
-    val newGrid = createEmptyGrid(grid.length, grid(0).length)
-    entities.foldLeft(newGrid) {
-      case (updatedGrid, entity) =>
-        updatedGrid(entity.x)(entity.y) = Occupied(entity)
-        updatedGrid
+  def updateGrid(grid: GridType, entities: Seq[Entity]): GridType = {
+    val updatedGrid = createEmptyGrid(grid.length, grid(0).length)
+    entities.foreach {
+      case tuna: Tuna => updatedGrid(tuna.x)(tuna.y) = Some(tuna)
+      case shark: Shark => updatedGrid(shark.x)(shark.y) = Some(shark)
+    }
+    updatedGrid
+  }
+
+  def simulateCycle(grid: GridType): GridType = {
+    // Perform movement, breeding, and eating logic
+    grid // Placeholder, implement logic as per Wator simulation rules
+  }
+
+  def moveEntity(entity: Entity, grid: GridType, width: Int, height: Int): (Entity, GridType) = {
+    entity match {
+      case tuna: Tuna => Tuna.move(tuna, grid, width, height)
+      case shark: Shark => Shark.move(shark, grid, width, height)
     }
   }
 
-  def getNeighbors(x: Int, y: Int, width: Int, height: Int): Seq[Coordinates] = {
-    Seq(
-      (x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1),
-      (x - 1, y - 1), (x + 1, y + 1), (x - 1, y + 1), (x + 1, y - 1)
-    ).filter { case (nx, ny) =>
-      nx >= 0 && nx < width && ny >= 0 && ny < height
-    }
+  def updateCell(grid: GridType, x: Int, y: Int, entity: Cell): GridType = {
+    grid(x)(y) = entity
+    grid
   }
 
-  def createGridShapes(grid: Array[Array[CellType]], cellSize: Double): ObservableBuffer[Rectangle] = {
-    ObservableBuffer((for {
-      (row, rowIndex) <- grid.zipWithIndex
-      (cell, colIndex) <- row.zipWithIndex
-      if cell != Empty
-    } yield {
-      val entity = cell match {
-        case Occupied(ent) => ent
-        case _ => throw new IllegalStateException("This should never happen.")
-      }
-      new Rectangle {
-        x = colIndex * cellSize
-        y = rowIndex * cellSize
-        width = cellSize
-        height = cellSize
-        fill = entity match {
-          case _: Tuna  => Color.Green
-          case _: Shark => Color.Red
-        }
-      }
-    }).toSeq: _*)
+  def getFreeNeighborCells(x: Int, y: Int, grid: GridType, width: Int, height: Int): Seq[Coordinates] = {
+    getNeighborCells(x, y, grid, width, height)
+      .filter(cell => cell.isEmpty)
+      .map(cell => Coordinates(cell.x, cell.y))
   }
 
-  def cellIsEmpty(x: Int, y: Int, grid: Array[Array[CellType]]): Boolean = grid(x)(y) == Empty
-
-  def cellIsOccupied(x: Int, y: Int, grid: Array[Array[CellType]]): Boolean = grid(x)(y) match {
-    case Occupied(_) => true
-    case _           => false
+  def getNeighborCells(x: Int, y: Int, grid: GridType, width: Int, height: Int): Seq[Option[Entity]] = {
+    val neighbors = for {
+      i <- -1 to 1
+      j <- -1 to 1
+      if !(i == 0 && j == 0)
+    } yield grid((x + i + width) % width)((y + j + height) % height)
+    neighbors
   }
+
 }
