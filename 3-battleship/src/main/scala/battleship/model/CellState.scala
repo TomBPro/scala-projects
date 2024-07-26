@@ -1,6 +1,4 @@
-package battleship
-
-case class Board(cells: Map[Position, CellState])
+package battleship.model
 
 sealed trait CellState
 case object Empty extends CellState
