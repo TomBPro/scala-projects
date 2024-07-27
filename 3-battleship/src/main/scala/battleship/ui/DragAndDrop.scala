@@ -1,49 +1,67 @@
 package battleship.ui
 
+import javafx.scene.control.Label
 import javafx.scene.input.DataFormat
+import javafx.scene.input.DragEvent
+import javafx.scene.input.TransferMode
+import javafx.scene.layout.GridPane
+import javafx.scene.layout.VBox
 import scalafx.Includes.*
-import scalafx.scene.Node
-import scalafx.scene.input.DragEvent
-import scalafx.scene.input.Dragboard
-import scalafx.scene.input.TransferMode
-import scalafx.scene.layout.GridPane
 
 object DragAndDrop {
 
-  def setupDragAndDrop(shipPalette: Node, boardPane: GridPane, onShipDrop: (Int, Int, Int) => Unit): Unit = {
+  def setupDragAndDrop(shipPalette: VBox, boardPane: GridPane, onShipDrop: (Int, Int, Int) => Unit): Unit = {
 
-    // Start drag operation
-    shipPalette.setOnDragDetected { e =>
-      val db = shipPalette.startDragAndDrop(TransferMode.Copy)
-      val content = new java.util.HashMap[DataFormat, Any]()
-      content.put(DataFormat.PLAIN_TEXT, "5") // Example ship size, update as needed
-      db.setContent(content)
-      e.consume()
+    // Handle drag detected on the ship palette
+    shipPalette.getChildren.forEach { node =>
+      node match {
+        case label: Label =>
+          label.setOnDragDetected { (e: javafx.scene.input.MouseEvent) =>
+            val db = label.startDragAndDrop(TransferMode.COPY)
+            val content = new java.util.HashMap[DataFormat, Any]()
+            content.put(DataFormat.PLAIN_TEXT, label.getText)
+            db.setContent(content)
+            e.consume()
+          }
+        case _ => // Ignore non-label nodes
+      }
     }
 
-    // Handle drag over event
-    boardPane.setOnDragOver { e =>
-      if (e.getGestureSource != boardPane && e.getDragboard.hasContent(DataFormat.PLAIN_TEXT)) {
-        e.acceptTransferModes(TransferMode.Copy)
+    // Handle drag over on the board pane
+    boardPane.setOnDragOver { (e: DragEvent) =>
+      val db = e.getDragboard
+      if (e.getGestureSource != boardPane && db.hasContent(DataFormat.PLAIN_TEXT)) {
+        e.acceptTransferModes(TransferMode.COPY)
       }
       e.consume()
     }
 
-    // Handle drop event
-    boardPane.setOnDragDropped { e =>
+    // Handle drag dropped on the board pane
+    boardPane.setOnDragDropped { (e: DragEvent) =>
       val db = e.getDragboard
       if (db.hasContent(DataFormat.PLAIN_TEXT)) {
         val shipSize = db.getContent(DataFormat.PLAIN_TEXT).toString.toInt
         val dropX = e.getX
         val dropY = e.getY
 
-        // Translate drop coordinates to grid cell coordinates
-        val cellWidth = boardPane.width.value / boardPane.getColumnCount
-        val cellHeight = boardPane.height.value / boardPane.getRowCount
+        // Calculate grid cell indices
+        val cellWidth = boardPane.getWidth / boardPane.getColumnCount
+        val cellHeight = boardPane.getHeight / boardPane.getRowCount
         val rowIndex = (dropY / cellHeight).toInt
         val colIndex = (dropX / cellWidth).toInt
 
+        // Call the callback function
         onShipDrop(shipSize, rowIndex, colIndex)
+
+        // Remove the ship from the ship palette
+        println(s"Ship Size from Drag Event: $shipSize") // Debug statement
+        val shipToRemove = shipPalette.getChildren.toArray.collectFirst {
+          case label: Label if label.getText.toInt == shipSize => label
+        }
+        shipToRemove.foreach { label =>
+          shipPalette.getChildren.remove(label)
+        }
+
         e.setDropCompleted(true)
       } else {
         e.setDropCompleted(false)
