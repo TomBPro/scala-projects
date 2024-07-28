@@ -28,6 +28,6 @@ Run the code at WatorSimulation located [here](2-wator/src/main/scala/wator/Wato
 
 ### Project 3 - Battleship
 
-Run the code at GameModel located [here](3-battleship/src/main/scala/battleship/GameModel.scala)
+Run the code at GameModel located [here](3-battleship/src/main/scala/battleship/Main.scala)
 
-![Demo of project 3](imgs/3-X%20demo.png)
+![Demo of project 3](imgs/3-battleship%20demo.png)
