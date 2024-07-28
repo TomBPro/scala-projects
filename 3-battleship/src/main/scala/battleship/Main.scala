@@ -1,3 +1,5 @@
+package battleship
+
 import battleship.model.Cell
 import battleship.model.GameModel
 import battleship.model.GameState
@@ -40,7 +42,7 @@ object Main extends JFXApp3 {
       })
 
       stage = new JFXApp3.PrimaryStage {
-        title.value = "Battleship - Ship Placement"
+        title = "Battleship - Ship Placement"
         scene = new Scene {
           root = new VBox {
             spacing = 10
@@ -102,7 +104,7 @@ object Main extends JFXApp3 {
       boardUI.updateUI(opponentBoardPane)
 
       stage = new JFXApp3.PrimaryStage {
-        title.value = "Battleship"
+        title = "Battleship"
         scene = new Scene {
           root = new HBox {
             spacing = 5
