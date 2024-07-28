@@ -1,9 +1,5 @@
-// Entity.scala
 package wator
 
-trait Entity {
-  def x: Int
-  def y: Int
+trait Entity extends PositionDelegate {
+  def energy: Int
 }
-
-case class Coordinates(x: Int, y: Int)
